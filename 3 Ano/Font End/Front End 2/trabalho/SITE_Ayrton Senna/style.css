@@ -1,0 +1,472 @@
+/* === Estilos Gerais === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+h1 {
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 0;
+  font-size: 2.5rem;
+  border-radius: 8px; /* arredondado para o h1 também */
+  box-shadow: 0 3px 8px rgba(26, 35, 126, 0.6);
+}
+
+h2 {
+  color: #1a237e;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-left: 6px solid #1a237e;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+/* Títulos com bordas arredondadas e fundo para cronologia e conquistas */
+.cronologia-title,
+.conquistas-title {
+  color: #1a237e;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid #1a237e;
+  padding-left: 16px;
+  border-radius: 8px;
+  background-color: #e8edff;
+  box-shadow: 0 3px 8px rgba(26, 35, 126, 0.3);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main,
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+p {
+  margin-bottom: 1.2em;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* Imagens flutuantes com largura fixa no desktop */
+.img-direita,
+.img-esquerda {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.img-direita {
+  float: right;
+  margin-left: 20px;
+}
+
+.img-esquerda {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Imagens centralizadas e responsivas */
+.imagem-central {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.imagem-central img,
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagem-central img:hover {
+  transform: scale(1.03);
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+/* Cards lado a lado com imagem responsiva */
+.side-by-side {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-by-side img {
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  flex: 2 1 400px;
+}
+
+.img-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.img-row img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+}
+
+.atalhos {
+  background-color: #f0f4ff;
+  border: 2px solid #cbd6ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 30px auto 50px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.atalhos p {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.atalhos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0;
+}
+
+.atalhos li a {
+  text-decoration: none;
+  color: #1a237e;
+  background-color: #e8edff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  border: 2px solid #1a237e;
+  font-weight: bold;
+}
+
+.atalhos li a:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.fonte-links,
+.fonte {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.fonte-links a,
+.fonte a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #1a237e;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.fonte-links a:hover,
+.fonte a:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.voltar {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.voltar a {
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #1a237e;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.voltar a:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* === Estilo para links da página principal === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1a237e;
+  border: 2px solid #1a237e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #1a237e;
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .img-direita,
+  .img-esquerda {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .atalhos ul,
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* === Estilos específicos para a Galeria Ayrton Senna === */
+main {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+header h1 {
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(26, 35, 126, 0.6);
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #1a237e;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-left: 6px solid #1a237e;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+/* Grid responsivo para as fotos */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 3rem;
+}
+
+.foto {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: translateY(-6px);
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.foto ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.foto h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1a237e;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.voltar {
+  text-align: center;
+  margin: 40px 0 30px;
+}
+
+.voltar a {
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 12px 26px;
+  border: 2px solid #1a237e;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.voltar a:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+/* Créditos das imagens */
+.creditos {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.creditos h3 {
+  color: #1a237e;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.creditos ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.creditos li {
+  line-height: 1.4;
+}
+
+.creditos a {
+  color: #1a237e;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1.5px solid #1a237e;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.creditos a:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+/* Responsividade para créditos */
+@media (max-width: 600px) {
+  .creditos ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+

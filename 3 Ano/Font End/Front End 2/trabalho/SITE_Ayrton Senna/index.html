@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayrton Senna</title>
+  <link rel="shortcut icon" href="imagens/falvicon.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  
+<!--A parte inicial do site foi fácil e difícil ao mesmo tempo, pois eu já tinha um modelo e uma ideia do que fazer. Fiz as pesquisas dos textos e imagens, redimensionei a imagem principal para telas menores, adicionei os links e pedi ao ChatGPT para dar um visual mais estético à página inicial. Ela foi difícil porque eu não sabia mexer com CSS, já que eu não entendia nada sobre isso e nem como pedir para o chat.-->
+
+</head>
+<body>
+ 
+  <header>
+    <h1>Ayrton Senna</h1>
+  </header>
+
+  <main>
+    <div class="imagem-central"> 
+       <picture>
+        <!-- Se a tela tiver no máximo 255px de largura, carregue a foto pequena -->
+        <source media="(max-width: 255px)" srcset="foto-p.png" type="Ayrton_Senna_p.jpeg">
+        <!-- Se a tela tiver no máximo 288px de largura, carregue a foto média -->
+        <source media="(max-width: 288px)" srcset="foto-m.png" type="Ayrton_Senna_m.jpeg">
+        <!-- Para todas as outras telas (maiores), carregue a foto grande -->
+        <img src="imagens/Ayrton_Senna_img-central.jpeg" alt="Ayrton Senna com avião RC">
+        </picture>
+    
+    </div>
+
+    <h2>Maior piloto da história do automobilismo</h2>
+
+    <p><strong>Ayrton Senna da Silva</strong> foi um <strong>piloto de Fórmula 1</strong>, empresário e filantropo brasileiro. <em>Senna foi campeão mundial da categoria três vezes</em>, em <strong>1988</strong>, <strong>1990</strong> e <strong>1991</strong>. Começou sua carreira competindo no <strong>kart</strong> em <strong>1973</strong> e em <strong>carros de fórmula</strong> em <strong>1981</strong>, quando venceu as Fórmulas Ford 1600 e 2000. Em <strong>1983</strong>, conquistou o título do <strong>Campeonato Britânico de Fórmula 3</strong>, <em>batendo vários recordes</em>.</p>
+
+    <p><strong>Este mini-site apresenta um resumo da vida e carreira de Ayrton Senna.</strong> <em>Navegue abaixo para explorar mais.</em></p>
+
+    <nav>
+      <ul>
+        <li><a href="biografia/biografia.html">Biografia</a></li>
+        <li><a href="cronologia/cronologia.html">Cronologia</a></li>
+        <li><a href="conquistas/conquistas.html">Principais conquistas</a>
+        <li><a href="galeria/galeria.html">Galeria de fotos</a></li></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    &copy; 2025 - Mini-site em homenagem a Ayrton Senna. Criado por Elvis Assis Ferreira.
+  </footer>
+
+</body>
+</html>
+
+
